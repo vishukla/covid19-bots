@@ -12,7 +12,7 @@ To install Python package dependencies, use `pip install -r requirements.txt` co
 
 ### Structure
 
-The collected Twitter data is expected to be in `data` directory. Same directory will be used by the script to write generated output files.
+The collected Twitter data is expected to be in `data` directory. Same directory will be used by the script to write generated output files. The entire dataset will be made available upon request.
 
 ```{bash}
 .
