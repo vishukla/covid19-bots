@@ -1,0 +1,39 @@
+# COVID19 bots
+
+This repository contains supplementary code for the paper "[Social media bots as active disseminators of COVID-19 news](http://review.frontiersin.org/review/565157/18/986972)" (currently under review).
+
+### Requirements
+
+This code has the following listed requirements to run successfully.
+- Python 3.x
+- Apache Spark
+
+To install Python package dependencies, use `pip install -r requirements.txt` command.
+
+### Structure
+
+The collected Twitter data is expected to be in `data` directory. Same directory will be used by the script to write generated output files.
+
+```{bash}
+.
+├── data
+│   ├── tcat_COVID-20200403-20200405------------fullExport--a04e82a9e6.csv # Collected data files
+│   ├── tcat_COVID-20200404-20200405------------fullExport--a04e82a9e6.csv  
+│   ├── tcat_COVID-20200412-20200414------------fullExport--ecc23817f6.csv
+.	.
+.	.
+.	.
+│   └── tcat_COVID-20200414-20200416------------fullExport--ecc23817f6.csv
+├── README.md
+├── requirements.txt
+└── src
+    ├── bots.py
+    ├── main.py
+    └── udfs.py
+```
+
+### Usage
+
+```{bash}
+python ./src/main.py
+```

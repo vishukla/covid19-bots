@@ -1,0 +1,8 @@
+botometer
+emoji
+matplotlib
+pandas
+pyspark
+nltk
+seaborn
+vaderSentiment
