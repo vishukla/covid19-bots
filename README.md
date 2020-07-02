@@ -25,9 +25,9 @@ The collected Twitter data is expected to be in `data` directory. Same directory
 │   ├── tcat_COVID-20200403-20200405------------fullExport--a04e82a9e6.csv # Collected data files
 │   ├── tcat_COVID-20200404-20200405------------fullExport--a04e82a9e6.csv  
 │   ├── tcat_COVID-20200412-20200414------------fullExport--ecc23817f6.csv
-.	.
-.	.
-.	.
+.   .
+.   .
+.   .
 │   └── tcat_COVID-20200414-20200416------------fullExport--ecc23817f6.csv
 ├── README.md
 ├── requirements.txt
