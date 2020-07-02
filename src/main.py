@@ -73,14 +73,14 @@ def main():
     bots_df = from_users_df[from_users_df['botometer_scores'] >= 3]
     bots_df.to_csv(os.path.join(data_dir, 'bots.csv'), index=False)
 
+    user_mentions_df = get_topN_of_col(df, 'user_mentions', 50)
+    user_mentions_df.to_csv(os.path.join(data_dir, 'frequent_user_mentions.csv'), index=False)
+
     bot_set = set(bots_df['from_user_name'].to_list())
     df = df.where(functions.col('from_user_name').isin(bot_set))
 
     hashtags_df = get_topN_of_col(df, 'hashtags', 50)
     hashtags_df.to_csv(os.path.join(data_dir, 'frequent_hashtags.csv'), index=False)
-
-    user_mentions_df = get_topN_of_col(df, 'user_mentions', 50)
-    user_mentions_df.to_csv(os.path.join(data_dir, 'frequent_user_mentions.csv'), index=False)
 
     emojis_df = get_topN_of_col(df, 'emojis', 50)
     emojis_df.to_csv(os.path.join(data_dir, 'frequent_emojis.csv'), index=False)
