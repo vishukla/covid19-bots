@@ -2,6 +2,7 @@
 
 This repository contains supplementary code for the following paper:
 >[Social media bots as active disseminators of COVID-19 news](http://review.frontiersin.org/review/565157/18/986972)" (currently under review)
+>
 >Ahmed Al-Rawi, Vishal Shukla
 
 This code is being used to perform analyses on COVID19 Twitter dataset collected by Twitter Capture and Analysis Toolset (TCAT). It generates files for the identified active users, Botometer scores for the user handles, terms, hashtags, emojis and sentiment for the tweets.
