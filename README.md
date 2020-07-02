@@ -1,7 +1,7 @@
 # COVID19 bots
 
 This repository contains supplementary code for the following paper:
->[Social media bots as active disseminators of COVID-19 news](http://review.frontiersin.org/review/565157/18/986972)" (currently under review)
+>[Social media bots as active disseminators of COVID-19 news](http://review.frontiersin.org/review/565157/18/986972) (currently under review)
 >
 >Ahmed Al-Rawi, Vishal Shukla
 
