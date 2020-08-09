@@ -25,9 +25,22 @@ def get_capitalized_words(input_string):
 @functions.udf(returnType=types.ArrayType(types.StringType()))
 def get_emojis(input_string):
     list_of_emojis = list()
-    for char in str(input_string):
+    emote_seq = str()
+    flag = 0
+    for idx, char in enumerate(str(input_string)):
         if char in emoji.UNICODE_EMOJI:
-            list_of_emojis.append(char)
+            flag = 1
+            emote_seq += char
+            if idx == len(input_string)-1:
+                list_of_emojis.append(emote_seq)
+        else:
+            if flag == 1 and emote_seq != '':
+                if len(emote_seq) > 0:
+                    list_of_emojis.append(emote_seq)
+                flag = 0
+                emote_seq = str()
+            else:
+                continue
     return list_of_emojis
 
 @functions.udf(returnType=types.ArrayType(types.StringType()))
