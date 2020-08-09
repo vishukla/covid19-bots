@@ -36,7 +36,7 @@ def get_emoji_sequence(input_string):
     list_of_emojis = list()
     emote_seq = str()
     flag = 0
-    for idx, char in enumerate(input_string):
+    for idx, char in enumerate(str(input_string)):
         if char in emoji.UNICODE_EMOJI:
             flag = 1
             emote_seq += char
