@@ -8,7 +8,7 @@ from pyspark import SparkContext
 from bots import get_botometer_score
 from pyspark.sql import SQLContext, SparkSession, functions
 
-data_dir = os.path.join('..', 'data')
+data_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', 'data')
 
 def spark_init():
     ''' Initializes Spark and returns spark context, sql context and spark session.
