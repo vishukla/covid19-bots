@@ -2,7 +2,6 @@
 
 This repository contains supplementary code for the following paper:
 >Social media bots as active disseminators of COVID-19 news (*currently under review*)<br>
->DOI: [10.2196/preprints.22292](https://doi.org/10.2196/preprints.22292)
 >
 >Ahmed Al-Rawi, Vishal Shukla
 
